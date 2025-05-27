@@ -1,0 +1,96 @@
+body {
+  font-family: Brush Script MT;
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  margin: 30px;
+  background-color: #0CC0EA;
+}
+
+.formulario-imagenes {
+  display: flex;
+  justify-content: center; /* CENTRA horizontalmente */
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.opcion {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* CENTRA verticalmente el contenido de cada opción */
+   flex: 1 1 200px;          /* Hace que cada opción crezca, pero tenga mínimo 200px */
+  max-width: 300px;         /* Evita que crezcan demasiado */
+
+}
+
+.opcion img {
+  width: 100%;              /* Se ajusta al ancho disponible del contenedor */
+  height: auto;             /* Mantiene proporciones */
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.opcion input[type="radio"] {
+  display: none;
+}
+
+.opcion input[type="radio"]:checked + img {
+  border: 4px solid #4747D4;
+  border-radius: 10px;
+}
+
+#formulario-personaje.desactivado {
+  display: none;
+}
+
+#resultado {
+  
+  font-size: 1.2em;
+}
+
+#resultado img {
+  width: 300px;
+  max-width: 90%;
+  border-radius: 10px;
+  margin-top: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  transition: 0.3s ease-in-out;
+}
+
+#boton-reintentar {
+  display: none;
+  margin-top: 15px;
+  padding: 10px 15px;
+  font-size: 1em;
+  cursor: pointer;
+    background-color: #4747D4;
+   font-family: Brush Script MT;
+   font-size: 30px;
+   border: 4px;
+  border-radius: 10px;
+  gap: 20px;
+}
+
+.boton{
+  background-color: #4747D4;
+   font-family: Brush Script MT;
+   font-size: 30px;
+   border: 4px;
+  border-radius: 10px;
+  gap: 20px;
+  width: 150px;
+}
+
+  button {
+  background-color: #007bff;        /* Azul principal */
+  color: white;                     /* Texto blanco */
+  border: none;
+  border-radius: 8px;               /* Bordes redondeados */
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
