@@ -1,5 +1,6 @@
+/* Estilos generales */
 body {
-  font-family: Brush Script MT;
+  font-family: "Brush Script MT", cursive;
   color: white;
   font-size: 50px;
   text-align: center;
@@ -7,50 +8,57 @@ body {
   background-color: #0CC0EA;
 }
 
+/* Contenedor de opciones */
 .formulario-imagenes {
   display: flex;
-  justify-content: center; /* CENTRA horizontalmente */
+  justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
   margin-top: 20px;
 }
 
+/* Cada opción (imagen + radio) */
 .opcion {
   display: flex;
   flex-direction: column;
-  align-items: center; /* CENTRA verticalmente el contenido de cada opción */
-   flex: 1 1 200px;          /* Hace que cada opción crezca, pero tenga mínimo 200px */
-  max-width: 300px;         /* Evita que crezcan demasiado */
-
+  align-items: center;
+  flex: 1 1 200px;
+  max-width: 300px;
 }
 
+/* Imagen de la opción */
 .opcion img {
-  width: 100%;              /* Se ajusta al ancho disponible del contenedor */
-  height: auto;             /* Mantiene proporciones */
+  width: 100%;
+  max-width: 300px;
+  height: auto;
   border-radius: 10px;
   cursor: pointer;
   transition: 0.3s ease-in-out;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
+/* Oculta el botón de radio */
 .opcion input[type="radio"] {
   display: none;
 }
 
+/* Imagen seleccionada */
 .opcion input[type="radio"]:checked + img {
   border: 4px solid #4747D4;
   border-radius: 10px;
 }
 
+/* Oculta el formulario cuando está desactivado */
 #formulario-personaje.desactivado {
   display: none;
 }
 
+/* Resultado */
 #resultado {
-  
   font-size: 1.2em;
 }
 
+/* Imagen del resultado */
 #resultado img {
   width: 300px;
   max-width: 90%;
@@ -60,37 +68,53 @@ body {
   transition: 0.3s ease-in-out;
 }
 
+/* Botón "Volver a intentar" */
 #boton-reintentar {
   display: none;
   margin-top: 15px;
   padding: 10px 15px;
   font-size: 1em;
   cursor: pointer;
-    background-color: #4747D4;
-   font-family: Brush Script MT;
-   font-size: 30px;
-   border: 4px;
-  border-radius: 10px;
-  gap: 20px;
-}
-
-.boton{
   background-color: #4747D4;
-   font-family: Brush Script MT;
-   font-size: 30px;
-   border: 4px;
+  color: white;
+  font-family: "Brush Script MT", cursive;
+  font-size: 30px;
+  border: 4px solid white;
   border-radius: 10px;
-  gap: 20px;
   width: 150px;
 }
 
-  button {
-  background-color: #007bff;        /* Azul principal */
-  color: white;                     /* Texto blanco */
-  border: none;
-  border-radius: 8px;               /* Bordes redondeados */
-  padding: 10px 20px;
-  font-size: 1em;
+/* Botones generales */
+.boton,
+button {
+  background-color: #4747D4;
+  color: white;
+  font-family: "Brush Script MT", cursive;
+  font-size: 30px;
+  border: 4px solid white;
+  border-radius: 10px;
+  padding: 10px 15px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  width: 150px;
+}
+
+/* RESPONSIVE: Estilos para pantallas pequeñas */
+@media (max-width: 600px) {
+  body {
+    font-size: 30px;
+    margin: 15px;
+  }
+
+  .boton,
+  #boton-reintentar {
+    width: 100%;
+    font-size: 24px;
+    padding: 12px;
+  }
+
+  #resultado img {
+    width: 100%;
+    max-width: 100%;
+  }
 }
