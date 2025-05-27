@@ -1,44 +1,45 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Eleccion de MOUSEPAD</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-       <h2>Elige tu Mousepad favorito</h2>
-  <form  id="formulario-personaje" class="formulario-imagenes">
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Elección de Mousepad</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <h2>Elige tu mousepad favorito</h2>
+
+  <form id="formulario-personaje" class="formulario-imagenes">
     <label class="opcion">
-      <input type="radio" name="personaje" value="Princesas" data-img="img/Princesas.jpg">
-      <img src="img/Princesas.jpg" alt="Princesas">
+      <input type="radio" name="personaje" value="Princesas" data-img="img/princesas.jpg">
+      <img src="img/princesas.jpg" alt="Princesas">
     </label>
     <label class="opcion">
-      <input type="radio" name="personaje" value="Mickey Mouse" data-img="img/Mickey Mouse.jpg">
-      <img src="img/Mickey Mouse.jpg" alt="Mickey Mouse">
+      <input type="radio" name="personaje" value="Mickey Mouse" data-img="img/mickey_mouse.jpg">
+      <img src="img/mickey_mouse.jpg" alt="Mickey Mouse">
+    </label>
+    <label class="opcion">
+      <input type="radio" name="personaje" value="Mini Mouse" data-img="img/mini_mouse.jpg">
+      <img src="img/mini_mouse.jpg" alt="Mini Mouse">
+    </label>
+    <label class="opcion">
+      <input type="radio" name="personaje" value="STITCH Blue" data-img="img/stitch_blue.jpg">
+      <img src="img/stitch_blue.jpg" alt="STITCH Blue">
+    </label>
+    <label class="opcion">
+      <input type="radio" name="personaje" value="STITCH Yellow" data-img="img/stitch_yellow.jpg">
+      <img src="img/stitch_yellow.jpg" alt="STITCH Yellow">
     </label>
 
-     <label class="opcion">
-      <input type="radio" name="personaje" value="Mini Mouse" data-img="img/Mini Mouse.jpg">
-      <img src="img/Mini Mouse.jpg" alt="Mini Mouse">
-    </label>
-
-     <label class="opcion">
-      <input type="radio" name="personaje" value="STITCH Blue" data-img="img/Stitch blue.jpg">
-      <img src="img/Stitch blue.jpg" alt="STITCH Blue">
-    </label>
-
-     <label class="opcion">
-      <input type="radio" name="personaje" value="STITCH Yellow" data-img="img/Stitch yellow.jpg">
-      <img src="img/Stitch yellow.jpg" 
-      alt="STITCH Yellow">
-    </label>
     <button type="submit" class="boton">Confirmar</button>
   </form>
-  
+
   <div id="resultado"></div>
-  
+
   <button id="boton-reintentar">Volver a intentar</button>
-   
+
   <script src="script.js"></script>
-  </body>
+
+</body>
 </html>
